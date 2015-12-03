@@ -1,0 +1,3 @@
+# This is for security purposes. It denies the user access to sub directories directly. Do not remove this
+
+Options -Indexes
