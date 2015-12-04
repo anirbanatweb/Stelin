@@ -8,7 +8,7 @@ Stelin is a basic URL shortener developed using HTML, CSS, PHP, MySQL and a bit 
 * It has a Twitter module built in, thanks to the Twitter API.
 * It also has a mailing module. So just key in your SMTP server details in the configuration file and the user will receive the shortened URL via email too (provided the user has entered his/her email address).
 
-Now the interesting part is that the last two modules of the web app are optional and the project is built in a `modular approach`. So you can enable or disable those optional features just by setting a particular variable in the configuration file either true or false. So you can have either of those modules or both or none but the core functions of the app will work as you would expect.
+Now the interesting part is that the last two modules of the web app are optional and the project is built in a `modular approach`. So you can `enable or disable those optional features` just by setting a particular variable in the configuration file either true or false. So you can have either of those modules or both or none but the core functions of the app will work as you would expect.
 
 ## Stack used
 
@@ -23,12 +23,12 @@ EasyPHP 14.1 VC11 is used during the development / testing. Component versions a
 
 The database must contain a table. The table structure is given below:
 
-urls (id, url, token)
-* id should be an `Integer` (It can be `INT` or `BIGINT` depending upon your requirements)
-* url should be `TEXT` (`VARCHAR` can be used but `TEXT` is recommended)
+`urls (id, url, token)`
+* id should be `INT` (`BIGINT` can also be used depending upon your requirements)
+* url should be `TEXT` (`VARCHAR` can also be used but `TEXT` is recommended)
 * token should be `VARCHAR` (Size can be selected depending upon your requirements)
 
-Here id is the primary key and also it should `AUTO_INCREMENT`. Set the starting value to `100000`.
+Here `id` is the `primary key` and also it should `AUTO_INCREMENT`. Set the starting value to `100000`.
 
 This is the MySQL query for the above.
 
@@ -52,7 +52,7 @@ Installation of the web app is easy! Just follow the given steps:
   * `email.php` contains the SMTP server configurations (The on/off toggle of the email module is in this file).
   * `server.php` contains the address of the root location of the web app (Example, `http://localhost/stelin-master`).
   * `twitter.php` contains your Twitter app credentials (The on/off toggle of the Twitter module is in this file).
-* Disable `ad blockers`. Otherwise the Twitter button will `not` appear.
+* `Disable ad blockers`. Otherwise the Twitter button may `not` appear.
 
 And that is all!
 
