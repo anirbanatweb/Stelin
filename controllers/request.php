@@ -46,7 +46,7 @@
 	else									
 	{
 		Session::unsetGeneralSession();
-		header("Location: Server::$root");
+		header("Location: " . Server::$root);
 		die();
 	}
 	
