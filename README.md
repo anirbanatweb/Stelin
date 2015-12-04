@@ -30,6 +30,7 @@ Installation of the web app is easy! Just follow the given steps:
   * email.php contains the SMTP server configurations (The on/off toggle of the email module is in this file).
   * server.php contains the address of the root location of the web app (Example, `http://localhost/stelin-master`).
   * twitter.php contains your Twitter app credentials (The on/off toggle of the Twitter module is in this file).
+* Disable ad blockers. Otherwise the Twitter button will not appear.
 
 And that is all!
 
